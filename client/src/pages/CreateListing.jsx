@@ -17,6 +17,7 @@ export default function CreateListing() {
     imageUrls: [],
     name: '',
     description: '',
+    phone: '',
     address: '',
     type: 'rent',
     bedrooms: 1,
@@ -179,6 +180,15 @@ export default function CreateListing() {
             required
             onChange={handleChange}
             value={formData.description}
+          />
+          <input
+            type='text'
+            placeholder='Mobile No.'
+            className='border p-3 rounded-lg'
+            id='phone'
+            required
+            onChange={handleChange}
+            value={formData.phone}
           />
           <input
             type='text'
